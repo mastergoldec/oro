@@ -42,11 +42,167 @@
     }
     
     footer {
-        background-color: #333;
+        background-color: #000000;
         color: #fff;
         text-align: center;
         padding: 10px;
     }
+
+    .inicio {
+    background-image: url('imagen-de-fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+
+.inicio-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.inicio h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.inicio p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #333;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #ff9900;
+}
+
+.acerca {
+    background-color: #ead87c;
+    color: #333;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.acerca-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.acerca h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.acerca p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.contacto {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.contacto-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contacto h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.contacto p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.info-contacto {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.contacto-info,
+.redes-sociales {
+    flex: 1;
+    text-align: left;
+}
+
+.contacto-info h3,
+.redes-sociales h3 {
+    font-size: 1.5rem;
+}
+
+.redes-sociales ul {
+    list-style: none;
+    padding: 0;
+}
+
+.redes-sociales ul li {
+    margin-top: 10px;
+}
+
+.redes-sociales ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.redes-sociales ul li a:hover {
+    color: #ffcc00;
+}
+
+form {
+    text-align: left;
+    margin-top: 40px;
+}
+
+form label {
+    display: block;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #ffcc00;
+    color: #333;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+form button:hover {
+    background-color: #ff9900;
+}
     </style>
 <body>
     <header>
@@ -61,20 +217,87 @@
         <h1>MasterGold</h1>
     </header>
     
-    <section id="inicio">
-        <!-- Contenido de la sección "Inicio" -->
+    <section id="inicio" class="inicio">
+        <div class="inicio-content">
+            <h1>Bienvenido a MasterGold</h1>
+            <p>Tu destino para joyas exquisitas y elegantes.</p>
+            <a href="#productos" class="cta-button">Explora nuestras joyas</a>
+        </div>
     </section>
 
     <section id="productos">
-        <!-- Contenido de la sección "Productos" -->
+        <h2>Nuestras Joyas Destacadas</h2>
+
+        <div class="producto">
+            <img src="joya1.jpg" alt="Joya 1">
+            <p>Joya 1</p>
+            <p>Precio: $100</p>
+        </div>
+
+        <div class="producto">
+            <img src="joya2.jpg" alt="Joya 2">
+            <p>Joya 2</p>
+            <p>Precio: $150</p>
+        </div>
+
+        <div class="producto">
+            <img src="joya3.jpg" alt="Joya 3">
+            <p>Joya 3</p>
+            <p>Precio: $120</p>
+        </div>
+
+        <div class="producto">
+            <img src="joya4.jpg" alt="Joya 4">
+            <p>Joya 4</p>
+            <p>Precio: $180</p>
+        </div>    </section>
+
+        <section id="acerca" class="acerca">
+            <div class="acerca-content">
+                <h2>Acerca de Nosotros</h2>
+                <p>Somos Joyería MasterGold, una empresa dedicada a la creación de joyas únicas y elegantes desde 1990. Nuestra pasión por el arte de la joyería nos impulsa a diseñar piezas excepcionales que reflejen la belleza y la individualidad de cada persona.</p>
+                <p>Nuestro equipo de expertos artesanos y diseñadores trabaja con los materiales más finos, incluyendo oro, plata y piedras preciosas, para crear joyas que se convierten en tesoros personales. Nos enorgullecemos de la artesanía de alta calidad y la atención al detalle que ponemos en cada pieza.</p>
+                <p>En Joyería MasterGold, nuestro compromiso es brindarte una experiencia única al elegir joyas que complementen tu estilo y personalidad. Te invitamos a explorar nuestra colección y descubrir la belleza atemporal de nuestras creaciones.</p>
+            </div>
     </section>
 
-    <section id="acerca">
-        <!-- Contenido de la sección "Acerca de nosotros" -->
+    <section id="contacto" class="contacto">
+        <div class="contacto-content">
+            <h2>Contacto</h2>
+            <p>¿Tienes preguntas o comentarios? No dudes en ponerte en contacto con nosotros. Estamos aquí para ayudarte.</p>
+            
+            <div class="info-contacto">
+                <div class="contacto-info">
+                    <h3>Información de Contacto</h3>
+                    <p><strong>Teléfono:</strong> +123 456 789</p>
+                    <p><strong>Correo Electrónico:</strong> info@tujoyeria.com</p>
+                </div>
+                
+                <div class="redes-sociales">
+                    <h3>Redes Sociales</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/tujoyeria" target="_blank">Facebook</a></li>
+                        <li><a href="https://twitter.com/tujoyeria" target="_blank">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/tujoyeria" target="_blank">Instagram</a></li>
+                        <li><a href="https://wa.me/tunumerodeWhatsApp" target="_blank">Contáctanos en WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+    
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+    
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+    
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </div>
     </section>
-
-    <section id="contacto">
-        <!-- Contenido de la sección "Contacto" -->
     </section>
 
     <footer>
